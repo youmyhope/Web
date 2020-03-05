@@ -1,7 +1,6 @@
 document.write("No time to die");
 document.write("</br>");
 
-//1.2. Count
 let text = ("No time to die");
 let a = text.length;
 document.write(a);
@@ -11,11 +10,10 @@ document.write(" ");
 document.write(b);
 document.write("</br>");
 
-//1.5. URL
 let hrefLocal = document.location.href;
 let hrefInternet = "https://chocayxanh.net/wp-content/uploads/2019/03/cay-moc-lan17.jpg";
 let hrefParams = "https://www.facebook.com/photo.php?fbid=1271116249748585&set=a.126510870875801&type=3&theater";
-//1.5. Protocol & fileExtension
+
 let hrefLocalProtocol = {
 	protocol: hrefLocal.substring(0, hrefLocal.indexOf(":"))
 }
@@ -28,7 +26,7 @@ let hrefInternetProtocol = {
 let hrefInternetfileExtension = {
 	InternetfileExtension: hrefInternet.substring(hrefInternet.lastIndexOf('.') +1, hrefInternet.length)
 }
-//1.6. Param
+
 function gethrefParams(href) {
 	let Params = {};
 	hrefParams.substring(hrefParams.indexOf('?') + 1, hrefParams.length).split('&')
@@ -47,7 +45,7 @@ document.write(hrefLocalfileExtension.fileExtension, ' ', hrefInternetfileExtens
 document.write("</br>");
 console.log(gethrefParams(hrefParams));
 
-//2. Key tags in the document
+
 let secondPart = document.createElement("h1");
 secondPart.innerText = "II. Key tags in the document";
 document.body.append(secondPart);
